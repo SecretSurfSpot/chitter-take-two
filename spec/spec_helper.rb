@@ -17,13 +17,13 @@
 # Set the environment to 'test'
 ENV['RACK_ENV'] = 'test'
 # Bring in contents of the app.rb file
-# require 'app.rb'
+require './app.rb'
 # require all testing gems
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 # Tell Capybara to talk to Chitter
-# Capybara.app = Chitter 
+# Capybara.app = Chitter
 
 # Allow test coverage stat generation (simplecov, SimpleCov.formatter etc)
 require 'simplecov'
