@@ -6,4 +6,8 @@ class Peep
       "third peep"
     ]
   end
+
+  def self.add
+  end
+  
 end

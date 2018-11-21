@@ -10,7 +10,12 @@ class Chitter < Sinatra::Base
 
   get '/peeps' do
     @peeps = Peep.all
-    erb :'peeps'
+    erb :peeps
+  end
+
+  get '/add_new_peep' do
+    'Add a peep'
+     erb :add_new_peep
   end
 
 
