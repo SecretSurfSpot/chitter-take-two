@@ -3,7 +3,6 @@ require './app/model/peep'
 
 class Chitter < Sinatra::Base
 
-
   get '/' do
     'Welcome to Chitter'
     erb :index
@@ -12,7 +11,6 @@ class Chitter < Sinatra::Base
   get '/peeps' do
     @peeps = Peep.all
     erb :'peeps'
-
   end
 
 
