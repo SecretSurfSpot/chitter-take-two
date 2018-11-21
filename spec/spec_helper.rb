@@ -23,7 +23,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 # Tell Capybara to talk to Chitter
-# Capybara.app = Chitter
+Capybara.app = Chitter
 
 # Allow test coverage stat generation (simplecov, SimpleCov.formatter etc)
 require 'simplecov'

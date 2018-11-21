@@ -1,16 +1,18 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/andrewgibbs/Projects/chitter-take-two/spec/features/feature_spec.rb": [
+      "/Users/andrewgibbs/Projects/chitter-take-two/spec/features/features_spec.rb": [
         1,
         1,
         1,
         1,
-        0,
         null,
+        null
+      ],
+      "/Users/andrewgibbs/Projects/chitter-take-two/spec/unit/index_spec.rb": [
         null
       ]
     },
-    "timestamp": 1542814132
+    "timestamp": 1542814915
   }
 }
