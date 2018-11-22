@@ -15,11 +15,8 @@ describe Peep do
     it 'creates a peep' do
       new_peep = 'This is a test peep'
       peep = Peep.create_new_peep(content: new_peep)
-
-      expect(peep).to be_a Peep
-      expect(peep).to respond_to(:id)
-      expect(peep.content).to eq 'This is a test peep'
-
+      peeps = Peep.view_all_peeps
+      expect(peeps).to include('This is a test peep')
     end
   end
 end
