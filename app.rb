@@ -9,6 +9,9 @@ class Chitter < Sinatra::Base
   end
 
   get '/peeps' do
+    #Print the env variable
+    # p ENV
+
     @peeps = Peep.view_all_peeps
     erb :peeps
   end

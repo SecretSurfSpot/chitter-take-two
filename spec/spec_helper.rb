@@ -16,8 +16,16 @@
 
 # Set the environment to 'test'
 ENV['RACK_ENV'] = 'test'
-# Bring in contents of the app.rb file
+
+# RSpec.configure do |config|
+#   config.before(:each) do
+#     setup_test_database
+#   end
+# end
+
+# Bring in contents of the app.rb & setup_test_database.rb files
 require './app.rb'
+require 'setup_test_database'
 # require all testing gems
 require 'capybara'
 require 'capybara/rspec'
@@ -38,6 +46,10 @@ SimpleCov.start
 
 
 RSpec.configure do |config|
+  # before each test run the setup_test_database method
+  config.before(:each) do
+    setup_test_database
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
