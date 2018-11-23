@@ -1,3 +1,7 @@
+
+
+# ******************** WORK IN PROGRESS ******************** #
+
 # Chitter - Take Two
 
 Chitter Take Two, created with Ruby, Sinatra, Rack, with testing frameworks RSpec (Unit tests) and Capybara (Feature tests) and a PostgreSQL database.
@@ -79,7 +83,7 @@ SimpleCov.start
 
  Initially, create a file called 'app.rb' in the project root, with the following code:
 ```
- require 'sinatra/base'
+require 'sinatra/base'
 
 class Chitter < Sinatra::Base
 
@@ -90,7 +94,6 @@ end
 run! if app_file == $0
  end
 ```
-
 Now configure the `rackup` command to run the application in 'app.rb' - create a file called 'config.ru' in the project root, with the following code:
 ```
 require_relative "./app"
