@@ -13,7 +13,7 @@ class Peep
 
   def self.view_all_peeps
     Database.setup_connection
-    peeps = Database.run_query('select * from peeps')
+    peeps = Database.run_query('SELECT * FROM peeps')
     # peeps.map { |peep| peep['content'] }
 
     peeps.map do |peep|
@@ -23,7 +23,7 @@ class Peep
 
   def self.create_new_peep(content:)
     Database.setup_connection
-    result = Database.run_query("insert into peeps(content) VALUES('#{content}') RETURNING id, username, content, created_at;")
+    result = Database.run_query("INSERT INTO peeps(content) VALUES('#{content}') RETURNING id, username, content, created_at;")
   end
 
 end
