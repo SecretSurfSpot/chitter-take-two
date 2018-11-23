@@ -5,12 +5,22 @@
     <title>All Peeps</title>
   </head>
   <body>
-
     <ul>
+      <br><br>
       <% @peeps.each do |peep| %>
-        <li><%= peep %></li>
-      <% end %>
+      <font size="1" face="verdana" color="blue">
+        @<%= peep.username %> </font>
+      <font size="1" face="verdana" color="darkgrey">
+        <%= peep.created_at %>
+      </font>
+      <br>
+        <textarea name="" disabled rows="3" cols="50">
+          <%= peep.content %>
+        </textarea>
+        <br><br>
+        <% end %>
+      <br>
+      <br>
     </ul>
-
   </body>
 </html>

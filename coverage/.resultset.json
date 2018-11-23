@@ -35,25 +35,6 @@
         null,
         null
       ],
-      "/Users/andrewgibbs/Projects/chitter-take-two/app/model/database.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        5,
-        5,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        null
-      ],
       "/Users/andrewgibbs/Projects/chitter-take-two/spec/unit/peeps_spec.rb": [
         1,
         null,
@@ -79,6 +60,6 @@
         null
       ]
     },
-    "timestamp": 1542984201
+    "timestamp": 1542987724
   }
 }
