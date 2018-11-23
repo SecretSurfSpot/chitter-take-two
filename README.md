@@ -76,7 +76,8 @@ SimpleCov.start
  To config Sinatra and Rack:
 
  Initially, create a file called 'app.rb' in the project root, with the following code:
- `require 'sinatra/base'
+```
+ require 'sinatra/base'
 
 class Chitter < Sinatra::Base
 
@@ -85,18 +86,19 @@ get '/' do 
 end
 
 run! if app_file == $0
- end`
+ end
+```
 
 Now configure the `rackup` command to run the application in 'app.rb' - create a file called 'config.ru' in the project root, with the following code:
+```
+require_relative "./app"
 
-`require_relative "./app"
-
-run Chitter`
-
+run Chitter
+```
 ### Setup Capybara to communicate with Sinatra
  - This configuration required modification to the spec_helper.rb file, the following code was added at the top of the file:
-
- `ENV['RACK_ENV'] = 'test'
+```
+ ENV['RACK_ENV'] = 'test'
 
  # Bring in contents of the app.rb file
  require './app.rb'
@@ -105,4 +107,5 @@ run Chitter`
  require 'capybara/rspec'
  require 'rspec'
  # Tell Capybara to talk to Chitter
- Capybara.app = Chitter`
+ Capybara.app = Chitter
+```
