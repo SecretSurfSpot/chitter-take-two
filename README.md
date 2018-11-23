@@ -27,7 +27,8 @@ Development database table: create & populate:
 - Navigate to the project root, then initialise the directory for git: `git init`
 - Create a Gemfile (Gems are Ruby modules/libraries): `bundle init`
 - Edit the Gemfile, including all Ruby modules required, Gemfile example below:
-`source "https://rubygems.org"
+```
+source "https://rubygems.org"
 
 gem 'rake'
 gem 'sinatra'
@@ -39,7 +40,8 @@ group :test do
   gem 'rubocop', '0.56.0'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
-end`
+end
+```
 - Install the Rubv gems: `bundle install` this will fetch all gems, then install them
 - Initialise RSPec: `rspec --init` this sets the project up to use RSpec, creating a .rspec file and a spec folder, with a spec_helper file inside
 
