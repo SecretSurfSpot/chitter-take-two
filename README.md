@@ -48,8 +48,8 @@ end`
 - The 'simplecov-console' gem provides a better console display of the code coverage breakdown
 
 To utilise the installed 'simplecov' gems, in the spec_helper.rb file, at the top, the following code was added:
-
-`require 'simplecov'
+```
+require 'simplecov'
 require 'simplecov-console'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
@@ -57,7 +57,8 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   # Want a nice code coverage website? Uncomment this next line!
   # SimpleCov::Formatter::HTMLFormatter
 ])
-SimpleCov.start`
+SimpleCov.start
+```
 
 ### Setup for Improving Code Quality
 - The 'rubocop' gem is a static Ruby code analyser, providing errors and warnings on the quality of the code syntax when compared with code guidelines detailed in the [Ruby Style Guide](https://github.com/rubocop-hq/ruby-style-guide)
