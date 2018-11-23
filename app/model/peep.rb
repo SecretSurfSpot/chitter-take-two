@@ -13,7 +13,7 @@ class Peep
 
   def self.view_all_peeps
     Database.setup_connection
-    peeps = Database.run_query('SELECT * FROM peeps;')
+    peeps = Database.run_query('SELECT * FROM peeps ORDER BY 1 DESC;')
 
     peeps.map do |peep|
       Peep.new(id: peep["id"], username: peep["username"], content: peep["content"], created_at: peep["created_at"])
