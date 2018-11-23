@@ -7,7 +7,9 @@ feature 'Feature Tests' do
 
   scenario 'User navigagtes to the peeps page' do
     visit('/peeps')
-    expect(page).to have_content('first peep')
+    expect(page).to have_content('this is my first peep')
+    expect(page).to have_content('second time around')
+    expect(page).to have_content('third time lucky?')
   end
 
   scenario 'User navigates to the add new peep page' do
