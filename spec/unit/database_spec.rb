@@ -11,9 +11,9 @@ describe Database do
   describe ".run_query" do
     it "executes a query using PG" do
       connection = Database.setup_connection()
-      expect(connection).to receive(:exec).with("SELECT * FROM peeps;")
+      expect(connection).to receive(:exec).with("SELECT * FROM peeps ORDER BY 1 DESC;")
 
-      Database.run_query("SELECT * FROM peeps;")
+      Database.run_query("SELECT * FROM peeps ORDER BY 1 DESC;")
     end
   end
 end
