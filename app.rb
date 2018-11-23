@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './app/model/peep'
+require './app/model/database'
 
 class Chitter < Sinatra::Base
 
@@ -16,6 +17,10 @@ class Chitter < Sinatra::Base
   get '/add_new_peep' do
     'Add a peep'
      erb :add_new_peep
+  end
+
+  post '/save_peep' do
+    Peep.create_new_peep(content: params[:peep])
   end
 
 
