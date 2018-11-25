@@ -4,7 +4,7 @@
 
 # Chitter - Take Two
 
-Chitter Take Two, created with Ruby, Sinatra, Rack, with testing frameworks RSpec (Unit tests) and Capybara (Feature tests) and a PostgreSQL database.
+Chitter Take Two, created with Ruby, HTML, Sinatra, Rack, with testing frameworks RSpec (Unit tests) and Capybara (Feature tests) and a PostgreSQL database.
 The app was developed using BDD, TDD and OOP principles and the MVC architectural pattern.
 
 ## Requirements
