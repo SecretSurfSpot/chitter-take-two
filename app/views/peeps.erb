@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>All Peeps</title>
-  </head>
-  <body>
-    <div class="container" id="peeps">
-    <% @peeps.each do |peep| %>
-    <h6 class="media-heading">@<%= peep.username %> <small><i>Posted on: <%= peep.created_at[0..18] %> at: <%= peep.created_at[11..18] %></i></small></h6>
-      <ul class="list-group" >
-          <li style="margin-bottom:25px">
-            <div class="media">
-              <div class="media-body">
-                <p><%= peep.content %></p>
-              </div>
-            </div>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </body>
-</html>
+<div class="container" id="peeps">
+<% @peeps.each do |peep| %>
+<h6 class="media-heading">@<%= peep.username %> <small><i>Posted on: <%= peep.created_at[0..18] %> at: <%= peep.created_at[11..18] %></i></small></h6>
+  <ul class="list-group" >
+      <li style="margin-bottom:25px">
+        <div class="media">
+          <div class="media-body">
+            <p><%= peep.content %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
