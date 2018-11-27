@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chitter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Chitter</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/peeps">View all Peeps</a></li>
+        <li><a href="/add_new_peep">Add a new Peep</a></li>
+        <li><a href="/">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container" style="margin-top: 100px">
+
+      <!-- this yeilds the content of what ever .erb file is called by the route we're on -->
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
