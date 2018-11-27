@@ -11,7 +11,7 @@
       <font size="1" face="verdana" color="blue">
         @<%= peep.username %> </font>
       <font size="1" face="verdana" color="darkgrey">
-        <%= peep.created_at %>
+        <%= peep.created_at[0..18] %>
       </font>
       <br>
         <textarea name="" disabled rows="3" cols="50">
