@@ -1,0 +1,36 @@
+body {
+ height: 1500px
+}
+
+/* .container {
+  margin-top: 50px
+} */
+
+.container, h6 {
+ text-align: left;
+ color: black
+}
+
+.container li {
+ background: #D3D3D3;
+ text-align: left;
+ width: 300px;
+ height: 80px;
+ padding: 10px
+}
+
+p {
+ text-align: left;
+ color: #3679B1
+}
+
+li {
+ list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+ .container {
+   margin-top: 50px;
+   margin-bottom: 20px;
+ }
+}

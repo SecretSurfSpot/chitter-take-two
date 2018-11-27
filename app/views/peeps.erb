@@ -5,22 +5,19 @@
     <title>All Peeps</title>
   </head>
   <body>
-    <ul>
-      <br><br>
-      <% @peeps.each do |peep| %>
-      <font size="1" face="verdana" color="blue">
-        @<%= peep.username %> </font>
-      <font size="1" face="verdana" color="darkgrey">
-        <%= peep.created_at[0..18] %>
-      </font>
-      <br>
-        <textarea name="" disabled rows="3" cols="50">
-          <%= peep.content %>
-        </textarea>
-        <br><br>
+    <div class="container" id="peeps">
+    <% @peeps.each do |peep| %>
+    <h6 class="media-heading">@<%= peep.username %> <small><i>Posted on: <%= peep.created_at[0..18] %> at: <%= peep.created_at[11..18] %></i></small></h6>
+      <ul class="list-group" >
+          <li style="margin-bottom:25px">
+            <div class="media">
+              <div class="media-body">
+                <p><%= peep.content %></p>
+              </div>
+            </div>
+          </li>
         <% end %>
-      <br>
-      <br>
-    </ul>
+      </ul>
+    </div>
   </body>
 </html>
